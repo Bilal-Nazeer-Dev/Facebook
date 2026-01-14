@@ -1,29 +1,36 @@
-# 📘 Facebook Login UI – Android App
+# 🚖 Uber Login UI – Android App
 
-A simple Android application that replicates the **Facebook Login screen UI** using **Kotlin** and **XML (ConstraintLayout)**.  
-This project is designed for **learning purposes**, focusing on UI design, form validation, and activity navigation.
+A **Uber-inspired Login Screen UI** built using **Kotlin** and **XML (ConstraintLayout)** for Android.  
+This project focuses on **UI/UX design, input validation, and basic interaction handling**.
 
 ---
 
 ## 📱 Project Overview
 
-This app demonstrates how to build a **Facebook-style login interface** in Android.  
-Users can enter an email/phone and password, validate input fields, and navigate to a welcome screen.
+This Android app replicates a **Uber-style login screen**, featuring:
+
+- Background image with dark overlay
+- Uber logo and app name
+- Username and password input fields
+- Sign In button
+- "Forgot password?" text
+- Social login icons (Facebook & Twitter)
 
 ⚠️ **Note:**  
-This project does **NOT** connect to real Facebook servers and does **NOT** perform actual authentication.
+This project is **for learning purposes only**.  
+It **does NOT connect to Uber servers** and does **NOT perform real authentication**.
 
 ---
 
 ## ✨ Features
 
-- 📧 Email / Phone input field
-- 🔒 Password input field
-- ✅ Input validation (empty field check)
-- 🔁 Intent-based navigation to another activity
-- 🎨 Facebook-like UI design
-- 🌐 Language display (English · اردو · More...)
-- 🔵 Login & 🟢 Create Account buttons
+- 👤 Username input field
+- 🔐 Password input field
+- ✅ Basic input validation (empty field check)
+- 📢 Toast messages for feedback
+- 🎨 Uber-style UI with background overlay
+- 📱 Responsive layout using ConstraintLayout
+- 🔗 Social login icons for Facebook and Twitter (UI only)
 
 ---
 
@@ -33,35 +40,25 @@ This project does **NOT** connect to real Facebook servers and does **NOT** perf
 |-------------|
 | <img src="screenshots/login.png" width="250"/> |
 
-
-
 ---
 
 ## 🛠️ Tech Stack
 
-- **Language:** Kotlin
-- **UI Design:** XML (ConstraintLayout)
-- **IDE:** Android Studio
-- **Architecture:** Activity-based
-- **Min SDK:** As per project configuration
+- **Language:** Kotlin  
+- **UI:** XML (ConstraintLayout)  
+- **IDE:** Android Studio  
+- **Architecture:** Activity-based  
+- **Design Focus:** Modern, minimal Uber-style login screen  
 
 ---
 
 ## 🧠 How It Works
 
-### 🔹 MainActivity Logic
-- Reads user input from `EditText`
-- Checks if email or password is empty
-- Shows a `Toast` if validation fails
-- Passes email to `WelcomeActivity` using `Intent`
+### 🔹 Login Logic (MainActivity)
 
-if (email.isEmpty() || password.isEmpty()) {
-    Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
-} else {
-    val intent = Intent(this, WelcomeActivity::class.java)
-    intent.putExtra("USERNAME", email)
-    startActivity(intent)
-}
+- Reads user input from EditText fields (username & password)
+- Checks if input is empty
+- Displays a **Toast message** for feedback
 
 ## 👤 Author
 
